@@ -1,33 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from './Components/Header'
+import Section from './Components/Section'
+import likedin from './assets/linkedin.svg'
+import github from './assets/github.svg'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      <Section className="w-screen h-screen gap-2" id="home">
+        <h1 className="text-7xl font-bold uppercase drop-shadow-md">
+          Romy Martinez
+        </h1>
+        <h2 className="text-4xl font-bold uppercase drop-shadow-md">
+          Full-Stack developer
+        </h2>
+        <div className="flex">
+          <a
+            href="https://github.com/RomyMartinez"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src={github} alt="github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/romy-martinez-nava"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src={likedin} alt="likedin" />
+          </a>
+        </div>
+      </Section>
     </>
   )
 }
