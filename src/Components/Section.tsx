@@ -9,7 +9,7 @@ export default function Section({
 }) {
   return (
     <section
-      className={`flex flex-col items-center justify-center text-stone-700 ${className}`}
+      className={`w-screen h-screen flex flex-col items-center justify-center text-stone-700 ${className}`}
       id={id}
     >
       {children}
