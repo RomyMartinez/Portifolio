@@ -17,7 +17,7 @@ export function Projects() {
               <div className="flex flex-col bg-slate-100 border-2 border-slate-800  rounded-lg h-80 hover:scale-105 transition duration-600 ease-in-out p-2">
                 <img
                   className="rounded-lg h-52"
-                  src={`../public/projetos/${project.img}`}
+                  src={`https://portifolio-five-chi-10.vercel.app/projetos/${project.img}`}
                   alt={project.title}
                 />
                 <h3 className="text-xl text-slate-800 font-bold p-2">
