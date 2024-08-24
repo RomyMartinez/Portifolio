@@ -5,7 +5,7 @@ interface LinkToSectionProps {
 
 function LinkToSection({ section, children }: LinkToSectionProps) {
   return (
-    <a href={`${section}`} className="no-underline hover:text-slate-500">
+    <a href={`#${section}`} className="no-underline hover:text-slate-500">
       {children}
     </a>
   )
@@ -19,8 +19,8 @@ export function Bar() {
       </div>
       <div className="flex flex-row space-x-10 text-slate-600">
         <LinkToSection section="about">About Me</LinkToSection>
-        <LinkToSection section="Projects">Projects</LinkToSection>
-        <LinkToSection section="Contact">Contact</LinkToSection>
+        <LinkToSection section="projects">Projects</LinkToSection>
+        <LinkToSection section="contact">Contact</LinkToSection>
       </div>
     </header>
   )
