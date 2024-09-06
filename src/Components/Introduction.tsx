@@ -11,9 +11,11 @@ export function Introduction() {
         </h1>
       </div>
       <GithubLinkendin />
-      <Button extraClass="text-2xl font-semibold hover:scale-105 ">
-        <a href="#projects">Projects</a>
-      </Button>
+      <a href="#projects">
+        <Button extraClass="text-2xl font-semibold hover:scale-105 ">
+          Projects
+        </Button>
+      </a>
     </section>
   )
 }

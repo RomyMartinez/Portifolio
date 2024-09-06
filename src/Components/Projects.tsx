@@ -14,10 +14,10 @@ export function Projects() {
         {PROJECTS.map((project) => {
           return (
             <li key={project.title}>
-              <div className="flex flex-col bg-slate-100 border-2 border-slate-800  rounded-lg h-80 hover:scale-105 transition duration-600 ease-in-out p-2">
+              <div className="flex flex-col shadow-lg bg-slate-100 border-2 border-slate-800  rounded-lg h-80 hover:scale-105 transition duration-600 ease-in-out p-2">
                 <img
                   className="rounded-lg h-52"
-                  src={`https://portifolio-five-chi-10.vercel.app/projetos/${project.img}`}
+                  src={`../public/projetos/${project.img}`}
                   alt={project.title}
                 />
                 <h3 className="text-xl text-slate-800 font-bold p-2">
@@ -35,17 +35,13 @@ export function Projects() {
                       })}
                     </ul>
                   </div>
-                  <div className="flex gap-2">
-                    <Button extraClass="">
-                      <a target="_blank" href={project.link}>
-                        Visit Project
-                      </a>
-                    </Button>
-                    <Button>
-                      <a target="_blank" href={project.repositorio}>
-                        Repositorio
-                      </a>
-                    </Button>
+                  <div className="flex gap-2 font-semibold">
+                    <a target="_blank" href={project.link}>
+                      <Button extraClass="">Visit Project</Button>
+                    </a>
+                    <a target="_blank" href={project.repositorio}>
+                      <Button>Repositorio</Button>
+                    </a>
                   </div>
                 </div>
               </div>
