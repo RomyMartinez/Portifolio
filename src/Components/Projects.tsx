@@ -7,7 +7,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col h-svh py-10 mx-auto my-5 w-5/6  justify-between"
+      className="flex flex-col h-svh py-10 mx-auto w-5/6  justify-between"
     >
       <Title title="Projects" extraClass="self-start text-center self-center" />
       <ul className="grid grid-cols-3 w-full gap-8 h-4/5 rounded-lg">
