@@ -9,7 +9,7 @@ export function About() {
       >
         <article className="flex flex-col gap-10 justify-center items-center text-justify w-2/5">
           <Title title="About Me" />
-          <p className=" text-slate-600  leading-8">
+          <p className=" text-slate-600 leading-8">
             <p>
               Eu sou Romy Martinez, um desenvolvedor Front-End de 19 anos com
               uma sólida base em React, CSS, JavaScript, HTML, e Next.js. Estou
