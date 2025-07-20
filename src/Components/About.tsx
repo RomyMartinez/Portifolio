@@ -1,5 +1,5 @@
-import { Title } from './UI/Title'
-import Romy from '../assets/Romy.jpg'
+import { Title } from "./UI/Title";
+import Romy from "../assets/Romy.jpg";
 export function About() {
   return (
     <>
@@ -11,13 +11,6 @@ export function About() {
           <Title title="About Me" />
           <p className=" text-slate-600 leading-8">
             <p>
-              Eu sou Romy Martinez, um desenvolvedor Front-End de 19 anos com
-              uma sólida base em React, CSS, JavaScript, HTML, e Next.js. Estou
-              empenhado em expandir meus conhecimentos para o Back-End, com o
-              objetivo de me tornar um desenvolvedor FullStack completo.
-            </p>
-            <br />
-            <p>
               Atualmente, moro no estado do Rio de Janeiro e estou cursando
               Sistemas de Informação no Instituto Federal de Educação, Ciência e
               Tecnologia Fluminense (IFF), campus Centro em Campos dos
@@ -26,7 +19,6 @@ export function About() {
               dinâmicas e responsivas que proporcionam uma excelente experiência
               ao usuário.
             </p>
-            <br />
             <p>
               Estou motivado a aplicar e expandir meus conhecimentos em
               ambientes práticos. Procuro oportunidades desafiadoras onde eu
@@ -41,5 +33,5 @@ export function About() {
         </div>
       </section>
     </>
-  )
+  );
 }

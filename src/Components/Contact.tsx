@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import { Title } from './UI/Title'
-import { GithubLinkendin } from './UI/GithubLinkedin'
+import { useState } from "react";
+import { Title } from "./UI/Title";
+import { GithubLinkendin } from "./UI/GithubLinkedin";
 export function Contact() {
-  const [isCopy, setIsCopy] = useState(false)
+  const [isCopy, setIsCopy] = useState(false);
 
   function handleCopy(event: React.MouseEvent<HTMLButtonElement>) {
-    event.preventDefault()
-    setIsCopy(true)
-    navigator.clipboard.writeText('ngcsmrtnz@gmail.com')
+    event.preventDefault();
+    setIsCopy(true);
+    navigator.clipboard.writeText("ngcsmrtnz@gmail.com");
 
     setTimeout(() => {
-      setIsCopy(false)
-    }, 1000)
+      setIsCopy(false);
+    }, 1000);
   }
 
   return (
@@ -30,12 +30,12 @@ export function Contact() {
             className=" bg-slate-800 text-slate-300 py-1 w-44 rounded-b-md hover:bg-slate-300 hover:text-slate-800 border-2 border-slate-800 transition duration-600 ease-in-out "
             disabled={isCopy ? true : false}
           >
-            {isCopy ? 'Email copied!' : 'Copy email'}
+            {isCopy ? "Email copied!" : "Copy email"}
           </button>
         </div>
-        <p>Phone: +55 22 999371943</p>
+        <p>Phone: +55 22 999371942</p>
         <GithubLinkendin />
       </div>
     </section>
-  )
+  );
 }
