@@ -8,7 +8,7 @@ export function Icon({ name }: { name: string }) {
 
   return (
     <>
-      <img src={icon} className="h-5 w-5" alt={name} />
+      <img src={icon} className="h-7 w-7" alt={name} />
     </>
   );
 }
