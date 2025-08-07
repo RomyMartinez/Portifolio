@@ -27,7 +27,9 @@ export function Contact() {
           />
 
           <div className="flex justify-center">
-            <ContactInfo isCopy={isCopy} handleCopy={handleCopy} />
+            <div className="max-w-2xl w-full">
+              <ContactInfo isCopy={isCopy} handleCopy={handleCopy} />
+            </div>
           </div>
         </div>
       </div>
